@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { AchievementCarousel } from '@/components/achievements/achievement-carousel'
 import type { AchievementItem } from '@/components/achievements/types'
 
@@ -249,13 +250,14 @@ export default function Home() {
           </div>
           <div className="coding-note">
             <span className="code-doodle" aria-hidden="true">{`{ }`}</span>
-            <span className="coding-label">CURRENTLY ON MY WHITEBOARD</span>
-            <strong>1750+ LeetCode rating,<br />one contest at a time.</strong>
-            <div className="code-tags">
-              <span>LeetCode · 1,300+ problems explored</span>
-              <span>Python · CPP · SQL</span>
-              <span>Competitive Programming · DSA</span>
-              <span>mostly for the thrill of solving ✳</span>
+            <div className="coding-shot-frame">
+              <Image
+                src="/Screenshot 2026-11-26 141625.png"
+                alt="Hemalatha Venkatesan LeetCode profile stats showing 1,754 contest rating and 1,312 problems solved"
+                width={1764}
+                height={988}
+                className="coding-shot"
+              />
             </div>
             <a href="https://leetcode.com/u/Hemalatha_Venkatesan/" target="_blank" rel="noreferrer" className="underlined-link">Find me solving things <span aria-hidden="true">↗</span></a>
           </div>
