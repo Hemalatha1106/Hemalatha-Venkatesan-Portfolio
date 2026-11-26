@@ -145,7 +145,7 @@ export default function Home() {
           <span className="scribble-arrow" aria-hidden="true">↙</span>
           <p className="photo-caption">a face behind the pixels <span>♥</span></p>
         </div>
-        <div className="hero-bottom"><span>SCROLL A LITTLE</span><span className="down-line" aria-hidden="true" /><span>PORTLAND, OR · 45°31&apos;N</span></div>
+        <div className="hero-bottom"><span>SCROLL A LITTLE</span><span className="down-line" aria-hidden="true" /><span>CHENNAI, INDIA · 13°05&apos;N, 80°17&apos;E</span></div>
       </section>
 
       <div className="ticker" aria-label="A little bit of everything, made with care">
