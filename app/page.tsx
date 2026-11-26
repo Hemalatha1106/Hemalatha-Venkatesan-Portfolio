@@ -10,7 +10,8 @@ const projects = [
     description: 'An AI-powered database assistant that turns natural language questions into SQL queries, visual insights, and charts. Powered by schema-aware RAG for context-aware query generation.',
     tags: ['React', 'FastAPI', 'Python', 'MySQL', 'SQLAlchemy', 'Gemini'],
     domain: 'askdb.studio',
-    artTitle: 'talk to data.',
+    image: '/Askdb-screenshot.png',
+    imageAlt: 'AskDB interface showing natural language SQL assistant hero',
     color: 'peach',
     icon: '*',
     link: 'https://github.com/Hemalatha1106/AskDB-Main',
@@ -22,7 +23,8 @@ const projects = [
     description: 'A gamified competitive programming platform that brings coding profiles, leaderboards, badges, XP, and social interactions together in one community.',
     tags: ['Next.js', 'TypeScript', 'Supabase', 'PostgreSQL'],
     domain: 'insphere.studio',
-    artTitle: 'code & compete.',
+    image: '/insphere-screenshot.png',
+    imageAlt: 'Insphere competitive programming command center interface',
     color: 'mint',
     icon: '+',
     link: 'https://github.com/Hemalatha1106/Insphere-Gamified',
@@ -34,7 +36,8 @@ const projects = [
     description: 'A Chrome extension that automatically saves accepted solutions, generates AI-powered documentation, and syncs them to GitHub with one click.',
     tags: ['Chrome Extension (MV3)', 'Node.js', 'Express', 'Gemini API'],
     domain: 'leetvault.studio',
-    artTitle: 'save & sync.',
+    image: '/leetvault-screenshot.png',
+    imageAlt: 'LeetVault Chrome extension syncing an accepted LeetCode solution to GitHub',
     color: 'butter',
     icon: '♥',
     link: 'https://github.com/Hemalatha1106/LeetVault',
@@ -171,7 +174,7 @@ export default function Home() {
             {projects.map((project) => (
               <article className={`project project-${project.color}`} key={project.number}>
                 <div className="project-visual">
-                  <div className="project-browser"><div className="browser-top"><span /><span /><span /><i>{project.domain}</i></div><div className={`browser-art art-${project.color}`}><span className="art-kicker">a little space to</span><strong>{project.artTitle}</strong><span className="art-shape" aria-hidden="true">{project.icon}</span><div className="art-lines"><i /><i /><i /></div><span className="art-cta">take a look ↗</span></div></div>
+                  <div className="project-browser"><div className="browser-top"><span /><span /><span /><i>{project.domain}</i></div><div className={`browser-art art-${project.color}`}><Image src={project.image} alt={project.imageAlt} fill sizes="(max-width: 560px) 92vw, 400px" className="browser-shot" /></div></div>
                   <span className="project-index">№ {project.number}</span>
                   <span className="project-doodle" aria-hidden="true">{project.icon}</span>
                 </div>
